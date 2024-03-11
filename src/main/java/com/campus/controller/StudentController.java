@@ -24,7 +24,8 @@ public class StudentController {
 	private JobPostingService jobPostingService;
 	@GetMapping("/campus")
 	public String showHomePage() {
-System.out.println("welcome");
+
+	System.out.println("welcome");
 		return "index";
 	}
 
