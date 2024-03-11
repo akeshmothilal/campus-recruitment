@@ -75,6 +75,7 @@ public class CompanyController {
 		if (loggedComapny != null) {
 			mv.addObject("loggedComapny", loggedComapny);
 			List<Student> studentList = companyService.getallStudent();
+			System.out.println("List is "+studentList )
 			mv.addObject("studentList", studentList);
 
 			mv.setViewName("company_dashboard");
@@ -97,7 +98,8 @@ public class CompanyController {
 		if (loggedComapny != null) {
 
 			List<CompanyProfile> appliedStudent = companyService.getAllApplliedJobs(companyID);
-			System.out.println("applied student  is " + appliedStudent);
+
+			System.out.println( appliedStudent);
 			mv.addObject("appliedStudent", appliedStudent);
 			mv.setViewName("company_profile");
 		}
