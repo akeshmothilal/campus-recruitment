@@ -99,7 +99,7 @@ public class CompanyController {
 
 			List<CompanyProfile> appliedStudent = companyService.getAllApplliedJobs(companyID);
 
-			System.out.println("applied student  is " + appliedStudent);
+			System.out.println( appliedStudent);
 			mv.addObject("appliedStudent", appliedStudent);
 			mv.setViewName("company_profile");
 		}
